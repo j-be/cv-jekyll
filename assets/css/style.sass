@@ -1,0 +1,131 @@
+---
+---
+*
+    font-family: sans-serif
+    color: black
+
+body
+    max-width: 992px
+    margin: auto
+
+.subtitle
+    font-size: 1.5rem
+
+.contact-icon
+    height: 1.5em
+    width: 1.5em
+    margin-right: 6px
+
+.date-column
+    min-width: 150px
+
+.tag-line
+    font-family: monospace
+
+.heading
+    background-color: black
+    color: white
+    padding-left: 6px
+    padding-right: 6px
+    text-transform: uppercase
+
+.skill-bar-label
+    min-width: 100px
+    text-align: right
+    margin-right: 6px
+
+.skill-bar-label > span
+    background-color: black
+    color: white
+    padding: 3px 6px
+
+.skill-bar
+    background-color: black
+    height: 1em
+    margin-top: 3px
+
+$bars: (100, 90, 80, 70, 60, 20)
+@each $bar in $bars
+    .skill-bar.skill-#{$bar}
+        width: percentage($bar / 100)
+
+.skill-circle
+    border-radius: 50%
+    background-color: black
+    margin: auto
+
+$circles: (3, 4, 5, 6)
+@each $circle in $circles
+    .skill-circle.skill-#{$circle}
+        width: $circle * 8px
+        height: $circle * 8px
+
+@media print
+    *
+        color-adjust: exact
+        -webkit-print-color-adjust: exact
+        print-color-adjust: exact
+
+    h3
+        margin: 16px 0 0 0
+
+    h1
+        margin: 0
+
+//
+// From PrimeFlex
+//
+
+.p-1
+    padding: 0.25rem
+
+.text-center
+    text-align: center
+
+.font-bold
+    font-weight: 700
+
+.flex
+    display: flex
+
+.flex-grow-1
+    flex-grow: 1
+
+.flex-row
+    flex-direction: row
+
+
+.flex-column
+    flex-direction: column
+
+.grid
+    display: flex
+    flex-wrap: wrap
+    margin-right: -.5rem
+    margin-left: -.5rem
+    margin-top: -.5rem
+
+.grid > [class*="col"]
+    box-sizing: border-box
+
+.col-2
+    flex: 0 0 auto
+    padding: .5rem
+    width: 16.6667%
+
+.col-12
+    flex: 0 0 auto
+    padding: .5rem
+    width: 100%
+
+@media screen and (min-width: 768px)
+    .md\:flex-row
+        flex-direction: row
+    .md\:col-3
+        flex: 0 0 auto
+        padding: -.5rem
+        width: 25%
+    .md\:col-6
+        flex: 0 0 auto
+        padding: -.5rem
+        width: 50%

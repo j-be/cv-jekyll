@@ -1,0 +1,15 @@
+<header class="grid">
+  <div class="col-12">
+    <h1 class="mb-0"><span class="heading">Juri Berlanda</span></h1>
+    <span class="subtitle">Full stack developer / DevOps</span>
+  </div>
+
+  <div class="col-12 flex flex-column">
+    {% for contact in site.data.contacts %}
+      <div class="flex">
+        <img class="contact-icon" src="./assets/img/{{ contact.icon }}">
+        <a href="{{ contact.link }}" target="_blank">{{ contact.title }}</a>
+      </div>
+    {% endfor %}
+  </div>
+</header>

@@ -1,0 +1,17 @@
+- name: Java
+  level: 100
+
+- name: Angular
+  level: 80
+
+- name: Android
+  level: 60
+
+- name: Quarkus
+  level: 90
+
+- name: Python
+  level: 70
+
+- name: Rust
+  level: 20

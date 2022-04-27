@@ -1,0 +1,35 @@
+<section class="grid">
+  <div class="col-12">
+    <h3><span class="heading">Who am I?</span></h3>
+  </div>
+  <div class="col-12 md:col-6">
+    <p class="">
+      Full stack developer (Java, Angular) / DevOps (Docker, OpenShift) by day.
+    </p>
+    <p>
+      Technology enthusiast (most recently some Rust with Rocket and Diesel) by night... and in my spare time.
+    </p>
+    <p>
+      I believe in the principles of Linux, and Free Software in general. I also deeply care about privacy, which is
+      why I run my own home-server with Nextcloud, Gitea, Kimai2; deployed and maintained via Ansible playbooks.
+    </p>
+  </div>
+  <div class="col-12 md:col-6">
+    {% for skill in site.data.skill_bars %}
+      <div class="flex flex-row p-1">
+        <div class="skill-bar-label"><span>{{ skill.name }}</span></div>
+        <div class="flex-grow-1">
+          <div class="skill-bar skill-{{ skill.level }}"></div>
+        </div>
+      </div>
+    {% endfor %}
+    <div class="grid">
+      {% for skill in site.data.skill_circles %}
+      <div class="col-2 flex flex-column">
+        <div class="skill-circle skill-{{ skill.level }}"></div>
+        <div class="text-center tag-line">{{ skill.name }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

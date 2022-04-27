@@ -1,0 +1,26 @@
+- title: Full-stack developer / DevOps / Architect
+  employer: Technical University Vienna
+  from: 3/2016
+  to: present
+  tags:
+    - Java
+    - Angular
+    - Quarkus
+    - Docker
+    - Postgres
+  content: Senior Developer, DevOps, and Software Architect. In the early days mostly Java
+    EE with JSF and PrimeFaces on Tomcat backed by Oracle and Postgres. Recently mostly
+    Quarkus and Angular. And a bit of DevOps with Jenkins, Docker and Kubernetes
+    (RedHat OpenShift).
+
+- title: Test Engineer
+  note: Freier Dienstnehmer
+  employer: StreamUnlimited
+  from: 9/2010
+  to: 3/2016
+  tags:
+    - Greybox/Blackbox testing
+    - Python
+    - Linux
+  content: Blackbox/Greybox testing of audio streaming devices. Later on automation of
+    system tests (mostly Python) and minor programming tasks (C++ and Android).

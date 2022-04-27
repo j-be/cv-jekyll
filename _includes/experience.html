@@ -1,0 +1,20 @@
+<section class="grid">
+  <div class="col-12">
+    <h3><span class="heading">Experience</span></h3>
+  </div>
+  {% for post in site.data.experience %}
+    <div class="col-12 flex flex-column md:flex-row">
+      <div class="date-column flex-column">
+        <div>{{ post.from }} - {{ post.to }}</div>
+      </div>
+      <div class="flex flex-column flex-grow-1">
+        <div class="flex flex-column md:flex-row font-bold">
+          <div class="flex-grow-1">{{ post.title }}</div>
+          <div><small>{{ post.employer }}</small></div>
+        </div>
+        <div>{{ post.content }}</div>
+        <div class="tag-line">{{ post.tags | join: " / " }}</div>
+      </div>
+    </div>
+  {% endfor %}
+</section>
