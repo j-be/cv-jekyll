@@ -8,6 +8,9 @@ body
     max-width: 992px
     margin: auto
 
+p
+    margin-top: 0
+
 .subtitle
     font-size: 1.5rem
 
@@ -21,6 +24,8 @@ body
 
 .tag-line
     font-family: monospace
+    font-weight: 700
+    font-size: 0.8rem
 
 .heading
     background-color: black
@@ -66,6 +71,13 @@ $circles: (3, 4, 5, 6)
         -webkit-print-color-adjust: exact
         print-color-adjust: exact
 
+    @page
+        margin: 0
+
+    body
+        font-size: 15px
+        margin: 1cm
+
     h3
         margin: 16px 0 0 0
 
@@ -75,9 +87,6 @@ $circles: (3, 4, 5, 6)
 //
 // From PrimeFlex
 //
-
-.p-1
-    padding: 0.25rem
 
 .text-center
     text-align: center
@@ -118,14 +127,32 @@ $circles: (3, 4, 5, 6)
     padding: .5rem
     width: 100%
 
+.p-1
+    padding: 0.25rem
+
+.mt-3
+    margin-top: 1rem
+
 @media screen and (min-width: 768px)
     .md\:flex-row
         flex-direction: row
     .md\:col-3
-        flex: 0 0 auto
-        padding: -.5rem
         width: 25%
     .md\:col-6
-        flex: 0 0 auto
-        padding: -.5rem
         width: 50%
+    .md\:col-4
+        width: 33.3333%
+    .md\:col-8
+        width: 66.6666%
+
+@media print
+    .md\:flex-row
+        flex-direction: row
+    .md\:col-3
+        width: 25%
+    .md\:col-6
+        width: 50%
+    .md\:col-4
+        width: 33.3333%
+    .md\:col-8
+        width: 66.6666%
