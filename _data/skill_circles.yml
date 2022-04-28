@@ -1,7 +1,7 @@
 - name: Jenkins
   level: 3
 
-- name: Postgres
+- name: Postgres<br>Oracle
   level: 4
 
 - name: IntelliJ
@@ -13,5 +13,5 @@
 - name: Git
   level: 5
 
-- name: Docker/K8s
+- name: Docker<br>K8s
   level: 3

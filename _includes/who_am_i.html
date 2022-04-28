@@ -2,7 +2,7 @@
   <div class="col-12">
     <h3><span class="heading">Who am I?</span></h3>
   </div>
-  <div class="col-12 md:col-4">
+  <div class="col-12 md:col-5">
     <p class="">
       Full stack developer (Java, Angular) / DevOps (Docker, OpenShift) by day.
     </p>
@@ -14,7 +14,7 @@
       why I run my own home-server with Nextcloud, Gitea, Kimai2; deployed and maintained via Ansible playbooks.
     </p>
   </div>
-  <div class="col-12 md:col-8">
+  <div class="col-12 md:col-7">
     {% for skill in site.data.skill_bars %}
       <div class="flex flex-row p-1">
         <div class="skill-bar-label"><span>{{ skill.name }}</span></div>
@@ -27,7 +27,7 @@
       {% for skill in site.data.skill_circles %}
       <div class="col-2 flex flex-column">
         <div class="skill-circle skill-{{ skill.level }}"></div>
-        <div class="text-center tag-line">{{ skill.name }}</div>
+        <div class="text-center skill-circle-label">{{ skill.name }}</div>
       </div>
       {% endfor %}
     </div>

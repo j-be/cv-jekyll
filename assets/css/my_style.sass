@@ -11,10 +11,6 @@ body
 p
     margin-top: 0
 
-section,
-header
-    padding-left: 1rem
-
 .subtitle
     font-size: 1.5rem
 
@@ -36,7 +32,7 @@ header
     color: white
     padding-left: 6px
     padding-right: 6px
-    margin-left: -1rem
+    margin-left: -.5rem
     text-transform: uppercase
 
 .skill-bar-label
@@ -64,11 +60,22 @@ $bars: (100, 90, 80, 70, 60, 20)
     background-color: black
     margin: auto
 
+.skill-circle-label
+    @extend .tag-line
+    height: 2rem
+    overflow: clip
+    font-size: 10px
+
 $circles: (3, 4, 5, 6)
 @each $circle in $circles
     .skill-circle.skill-#{$circle}
         width: $circle * 8px
         height: $circle * 8px
+
+
+@media screen and (min-width: 768px)
+    .skill-circle-label
+        font-size: 12px
 
 @media print
     *
@@ -79,15 +86,13 @@ $circles: (3, 4, 5, 6)
     @page
         margin: 0
 
-    body
-        font-size: 15px
-        margin: 1cm
-
+    h1,
     h3
-        margin: 16px 0 0 0
-
-    h1
         margin: 0
+
+    body
+        font-size: 14px
+        margin: 1cm
 
 //
 // From PrimeFlex
@@ -108,26 +113,20 @@ $circles: (3, 4, 5, 6)
 .flex-row
     flex-direction: row
 
-
 .flex-column
     flex-direction: column
 
 .grid
     display: flex
     flex-wrap: wrap
-    margin-right: -.5rem
-    margin-left: -.5rem
-    margin-top: -.5rem
 
-.grid > [class*="col"]
-    box-sizing: border-box
-
-$deviders: (2, 12)
-@each $devider in $deviders
-    .col-#{$devider}
+$dividers: (2, 12)
+@each $divider in $dividers
+    .col-#{$divider}
+        box-sizing: border-box
         flex: 0 0 auto
         padding: .5rem
-        width: percentage($devider / 12)
+        width: percentage($divider / 12)
 
 .p-1
     padding: 0.25rem
@@ -136,17 +135,23 @@ $deviders: (2, 12)
     margin-top: 1rem
 
 @media screen and (min-width: 768px)
-    .md\:flex-row
-        flex-direction: row
-    $deviders: (3, 4, 6, 8)
-    @each $devider in $deviders
-        .md\:col-#{$devider}
-            width: percentage($devider / 12)
+    $directions: (row, column)
+    @each $direction in $directions
+        .md\:flex-#{$direction}
+            flex-direction: $direction
+
+    $dividers: (3, 5, 6, 7)
+    @each $divider in $dividers
+        .md\:col-#{$divider}
+            width: percentage($divider / 12)
 
 @media print
-    .md\:flex-row
-        flex-direction: row
-    $deviders: (3, 4, 6, 8)
-    @each $devider in $deviders
-        .md\:col-#{$devider}
-            width: percentage($devider / 12)
+    $directions: (row, column)
+    @each $direction in $directions
+        .md\:flex-#{$direction}
+            flex-direction: $direction
+
+    $dividers: (3, 5, 6, 7)
+    @each $divider in $dividers
+        .md\:col-#{$divider}
+            width: percentage($divider / 12)
