@@ -1,13 +1,13 @@
 - name: Java
   level: 100
 
-- name: Angular
+- name: Typescript
   level: 80
 
 - name: Android
   level: 60
 
-- name: Quarkus
+- name: Go
   level: 90
 
 - name: Python

@@ -1,7 +1,20 @@
+- title: Senior Full-stack developer
+  employer: Dynatrace
+  from: 10/2022
+  to: present
+  tags:
+    - React
+    - Go (OperatorSDK)
+    - Java (SpringBoot)
+    - Kubernetes
+    - Jenkins
+  content: Starting off as React frontent developer, soon got the task to develop a
+    Kuberenets Operator in Go. Later on moved to a new team starting off a new Java
+    service based on SpringBoot. On the side, some Helm and ArgoCD to get stuff deployed.
 - title: Full-stack developer / DevOps / Architect
   employer: Technical University Vienna
   from: 3/2016
-  to: present
+  to: 10/2022
   tags:
     - Java
     - Angular
