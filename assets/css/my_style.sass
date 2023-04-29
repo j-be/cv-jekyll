@@ -92,7 +92,9 @@ $circles: (3, 4, 5, 6)
 
     body
         font-size: 14px
-        margin: 1cm
+    @page
+        margin: auto 1cm 1cm 1cm
+        color: white
 
 //
 // From PrimeFlex
@@ -128,8 +130,14 @@ $dividers: (2, 12)
         padding: .5rem
         width: percentage($divider / 12)
 
+.p-0
+    padding: 0
+
 .p-1
     padding: 0.25rem
+
+.py-2
+    padding: 0.5rem 0
 
 .mt-3
     margin-top: 1rem
