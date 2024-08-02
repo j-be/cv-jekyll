@@ -10,7 +10,7 @@
       </div>
       <div class="flex flex-column flex-grow-1">
         <div class="flex flex-column md:flex-row font-bold">
-          {{ post.title }}&nbsp;@&nbsp;<a href="{{ post.employer.url }}">{{ post.employer.name }}</a>
+          {{ post.title }}&nbsp;@&nbsp;<a href="{{ post.employer.url }}" target="_blank">{{ post.employer.name }}</a>
         </div>
         <div>{{ post.content }}</div>
         <div class="tag-line">{{ post.tags | join: " / " }}</div>
