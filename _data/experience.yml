@@ -1,9 +1,23 @@
+- title: Senior Software Developer & Team Captain
+  employer:
+    name: Dynatrace
+    url: https://www.dynatrace.com
+  from: 07/2024
+  to: present
+  tags:
+    - Go (OperatorSDK)
+    - Java (SpringBoot)
+    - Kubernetes
+    - Jenkins
+  content: In July 2024 I was appointed the  Team Captain role. As such, addidtionally to being a software developer
+    (see below) I am now also responsible for my team's internal working atmosphere, all member's personal and
+    professional growth, as well as for keeping communication with other teams and stakeholders.
 - title: Senior Software Developer
   employer:
     name: Dynatrace
     url: https://www.dynatrace.com/
   from: 10/2022
-  to: present
+  to: 07/2024
   tags:
     - React
     - Go (OperatorSDK)
