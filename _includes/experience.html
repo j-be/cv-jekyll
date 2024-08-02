@@ -3,7 +3,7 @@
     <h3><span class="heading">Experience</span></h3>
   </div>
   {% for post in site.data.experience %}
-    <div class="col-12 flex flex-column md:flex-row">
+    <div class="avoid-break col-12 flex flex-column md:flex-row">
       <div class="date-column flex-column">
         <div>{{ post.from }} - {{ post.to }}</div>
         <div><small>{{ post.note }}</small></div>

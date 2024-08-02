@@ -165,3 +165,6 @@ $dividers: (2, 6, 12)
     @each $divider in $dividers
         .md\:col-#{$divider}
             width: percentage($divider / 12)
+
+    .avoid-break
+        break-inside: avoid
