@@ -1,5 +1,7 @@
-- title: Senior Full-stack developer
-  employer: Dynatrace
+- title: Senior Software Developer
+  employer:
+    name: Dynatrace
+    url: https://www.dynatrace.com/
   from: 10/2022
   to: present
   tags:
@@ -12,7 +14,9 @@
     Kuberenets Operator in Go. Later on moved to a new team starting off a new Java
     service based on SpringBoot. On the side, some Helm and ArgoCD to get stuff deployed.
 - title: Full-stack developer / DevOps / Architect
-  employer: Technical University Vienna
+  employer:
+    name: Technical University Vienna
+    url: https://www.tuwien.at/
   from: 3/2016
   to: 10/2022
   tags:
@@ -28,7 +32,9 @@
 
 - title: Test Engineer
   note: Freier Dienstnehmer
-  employer: StreamUnlimited
+  employer:
+    name: StreamUnlimited
+    url: https://www.streamunlimited.com
   from: 9/2010
   to: 3/2016
   tags:

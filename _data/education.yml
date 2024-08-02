@@ -1,17 +1,23 @@
 - title: Master's Degree
-  institution: Technical University Vienna
+  institution:
+    name: Technical University Vienna
+    url: https://www.tuwien.at/
   from: 10/2014
   to: 6/2019
   content: Media and Human-Centered Computing
 
 - title: Bachelor's Degree
-  institution: Technical University Vienna
+  institution:
+    name: Technical University Vienna
+    url: https://www.tuwien.at/
   from: 10/2009
   to: 9/2014
   content: Media Informatics and Visual Computing
 
 - title: Matura
-  institution: Gewerbeoberschule "Max Valier" Bozen
+  institution:
+    name: Gewerbeoberschule "Max Valier" Bozen
+    url: https://www.tfobz.it/
   from: 9/2004
   to: 7/2009
   content: Informatics - comparable to austrian HTL
